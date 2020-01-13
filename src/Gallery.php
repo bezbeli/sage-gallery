@@ -18,7 +18,7 @@ class Gallery
         $orderby = $attr['orderby'];
         $link = '';
 
-        $columns = (12 % $columns == 0) ? $columns : 3;
+        $columns = 3;
         $grid = sprintf('col-%1$s col-sm-%1$s col-md-%1$s', 12 / $columns);
 
         $attachments = get_children([
